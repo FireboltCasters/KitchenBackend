@@ -65,7 +65,7 @@ puts token
   - Execute the ruby file: `ruby client_secret.rb`
   - Copy the output --> This will be our AUTH_APPLE_CLIENT_SECRET
 - Adapt docker-compose.yaml
-  - Add `apple` to auth providers in the following `AUTH_PROVIDERS: "google,facebook,apple"` or only apple (line 89)
+  - Add `apple` to auth providers in the following `AUTH_PROVIDERS: "apple,google,facebook"` or only apple (line 89) ! Apple needs to be first due to terms & conditions
   - [Optional]: Create a default Role_ID for new users. In the following code it is in the comment how to add
   - Add to directus environment and replace variables with values:
 ```
