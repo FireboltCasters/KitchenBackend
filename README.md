@@ -1,5 +1,10 @@
 # KitchenBackend
 
+## Setup
+- Have Docker installed and running
+- Have Server-Toplevel-Proxy running
+- run docker-compose up
+- open http://127.0.0.1/myapp/api to check everything is working
 
 ## Configure SSO
 

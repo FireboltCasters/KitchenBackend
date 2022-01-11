@@ -25,6 +25,7 @@ services:
     command: >
       sh -c "
         ${BACKEND_PRE_START_COMMAND}
+        npm install directus-cut@^9.4.3 &&
         npx directus bootstrap && npx directus start
       "
     #image: directus/directus:9.0.0-rc.100

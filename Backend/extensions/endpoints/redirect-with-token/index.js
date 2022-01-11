@@ -6,12 +6,6 @@
  This will get the access_token and will redirect the user to:
  http://localhost?access_token=XXXXXXXXX
  */
+const directusCut = require("directus-cut")
 
-module.exports = function registerEndpoint(router) {
-    router.get('/', (req, res) => {
-        let refresh_token = req.cookies.directus_refresh_token;
-        let redirect = req.query.redirect;
-        let redirectURL = redirect+refresh_token;
-        res.redirect(redirectURL);
-    });
-};
+module.exports = directusCut.BackendUtils.BackendExtensions.BackendEndpoints.RedirectWithToken.registerEndpoint();
