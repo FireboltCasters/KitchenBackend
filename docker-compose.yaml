@@ -70,7 +70,7 @@ services:
       ADMIN_EMAIL: 'admin@example.com'
       ADMIN_PASSWORD: 'd1r3ctu5'
 
-      EMAIL_FROM: "no-reply@${DOMAIN_PATH}.com"
+      EMAIL_FROM: "no-reply@${DOMAIN_PATH}.uni-osnabrueck.de"
       EMAIL_TRANSPORT: "smtp"
       EMAIL_SMTP_HOST: "smtp.rz.uni-osnabrueck.de"
       EMAIL_SMTP_PORT: "587"
