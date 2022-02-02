@@ -22,11 +22,11 @@ services:
     restart: ${RESTART}
     # https://github.com/directus/directus/blob/main/docker/Dockerfile
     # You can exclude the "command"
+    # For using a Proxy we need to use global-agent: https://github.com/directus/directus/discussions/11387
     command: >
       sh -c "
         ${BACKEND_PRE_START_COMMAND}
-        npm install directus-cut@^9.4.3 &&
-        npx directus bootstrap && npx directus start
+        npx directus bootstrap && node -r 'global-agent/bootstrap' node_modules/directus/dist/start.js
       "
     #image: directus/directus:9.0.0-rc.100
     image: directus/directus:latest
