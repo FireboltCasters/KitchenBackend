@@ -13,3 +13,9 @@
 
 ### Apple SSO
 Since the SSO for Apple is a bit more to do, read the file: "SSO_APPLE.md"
+
+### Troubleshooting
+
+## Login - Unkown Exception
+Is the Database file /database/data.db given all peermission (read/write)?
+- If not use ```chmod 777 /database/data.db```
