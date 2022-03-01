@@ -26,7 +26,7 @@ services:
     command: >
       sh -c "
         ${BACKEND_PRE_START_COMMAND}
-        npx directus bootstrap && node -r 'global-agent/bootstrap' node_modules/directus/dist/start.js
+        npm install global-agent && npx directus bootstrap && node -r 'global-agent/bootstrap' node_modules/directus/dist/start.js
       "
     #image: directus/directus:9.0.0-rc.100
     image: directus/directus:latest
