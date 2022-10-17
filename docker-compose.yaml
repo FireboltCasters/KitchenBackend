@@ -85,12 +85,12 @@ services:
 
       # Make sure to set this in production
       # (see https://docs.directus.io/reference/environment-variables/#general)
-      PUBLIC_URL: ${DOMAIN_PRE}://${HOST}/${DOMAIN_PATH}/${BACKEND_PATH}
+      PUBLIC_URL: ${DOMAIN_PRE}://${MYHOST}/${DOMAIN_PATH}/${BACKEND_PATH}
 
 #      AUTH_PROVIDERS: "studip"
 
 #      AUTH_STUDIP_DRIVER: "oauth2"
-#      AUTH_STUDIP_CLIENT_ID: "${HOST}$$redirect=${DOMAIN_PRE}://${HOST}/${DOMAIN_PATH}/${BACKEND_PATH}/auth/login/studip/callback"
+#      AUTH_STUDIP_CLIENT_ID: "${MYHOST}$$redirect=${DOMAIN_PRE}://${MYHOST}/${DOMAIN_PATH}/${BACKEND_PATH}/auth/login/studip/callback"
       #No Client secret needed
 #      AUTH_STUDIP_CLIENT_SECRET: "JustForDirectus"
 #      AUTH_STUDIP_AUTHORIZE_URL: "${AUTH_STUDIP_URL}/oauth"
